@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\src\Gray.csproj" />
+    <None Include="./Resources/**" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
