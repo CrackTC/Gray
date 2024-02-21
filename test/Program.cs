@@ -11,6 +11,6 @@ class Program
         var fileName = Path.GetFileName(path);
         var image = SKImage.FromEncodedData(path);
         var gray = image.ToGray();
-        gray.Encode(SKEncodedImageFormat.Jpeg, 80).SaveTo(File.OpenWrite(fileName + "_gray.png"));
+        gray.Encode(SKEncodedImageFormat.Jpeg, 80).SaveTo(File.OpenWrite(fileName + "_gray.jpg"));
     }
 }
