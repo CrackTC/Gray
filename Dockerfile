@@ -4,7 +4,7 @@ WORKDIR /app
 RUN apk add --no-cache clang zlib-dev musl-dev
 
 COPY . .
-RUN cd server && dotnet publish -c Release -o out -r linux-musl-x64 && rm -rf out/Gray.Server.dbg
+RUN cd server && dotnet publish -c Release -o out && rm -rf out/Gray.Server.dbg
 
 FROM alpine AS runtime
 WORKDIR /app
